@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  flex-direction: row;
+  /* Y */
+  align-items: center;
+  /* X */
+  justify-content: center;
+  height: 100vh;
+  gap: 100px;
+}
+
+div {
+  width: 100px;
+  height: 120px;
+  background-color: blueviolet;
+  border-radius: 5px;
+  overflow: auto;
+  transition: transform 0.8s;
+}
+
+.box:hover {
+  background-color: blue;
+  cursor: pointer;
+  color: white;
+  transform: rotate(-15deg);
+}
+
+.box2:hover {
+  transform: scale(1.2);
+  color: white;
+}
+
+.box3:hover {
+  transform: skew(15deg);
+}
+
+.box4:hover {
+  transform: rotate(45deg) scale(2);
+}

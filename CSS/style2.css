@@ -1,0 +1,23 @@
+body {
+  display: flex;
+  flex-direction: row;
+  /* Y */
+  align-items: center;
+  /* X */
+  justify-content: center;
+  height: 100vh;
+  gap: 100px;
+}
+
+div {
+  width: 100px;
+  height: 120px;
+  background-color: blueviolet;
+  border-radius: 5px;
+  overflow: auto;
+}
+
+.box:hover {
+  transform: perspective(200px) rotateY(45deg);
+  transform-origin: 0.5%;
+}
